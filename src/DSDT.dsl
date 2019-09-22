@@ -16893,7 +16893,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
                 Name (DHKF, 0x001F0000)
                 Name (DHKT, 0x00)
                 Name (DHWW, 0x00)
-                Mutex (XDHK, 0x00)
+                Mutex(XDHK, 0)
                 Method (MHKA, 1, NotSerialized)
                 {
                     If (LEqual (Arg0, 0x00))
@@ -17630,7 +17630,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
                 SBDN,   128
             }
 
-            Mutex (BATM, 0x00)
+            Mutex(BATM, 0)
             Method (GBIF, 3, NotSerialized)
             {
                 Acquire (BATM, 0xFFFF)
@@ -18622,7 +18622,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
     }
 
     Name (ECUP, 0x01)
-    Mutex (EHLD, 0x00)
+    Mutex(EHLD, 0)
     Method (TBTD, 1, Serialized)
     {
         ADBG ("TBTD")
@@ -19330,8 +19330,8 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
         }
     }
 
-    Mutex (MUTX, 0x00)
-    Mutex (OSUM, 0x00)
+    Mutex(MUTX, 0)
+    Mutex(OSUM, 0)
     Event (WFEV)
     OperationRegion (PRT0, SystemIO, 0x80, 0x04)
     Field (PRT0, DWordAcc, Lock, Preserve)
@@ -24311,7 +24311,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
         PAR3,   32
     }
 
-    Mutex (MSMI, 0x00)
+    Mutex(MSMI, 0)
     Method (SMI, 5, Serialized)
     {
         Acquire (MSMI, 0xFFFF)
@@ -25868,7 +25868,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
                 "uhdp3", 
                 "mhdp3"
             })
-            Mutex (MWMI, 0x00)
+            Mutex(MWMI, 0)
             Name (PCFG, Buffer (0x18){})
             Name (IBUF, Buffer (0x0100){})
             Name (ILEN, 0x00)
@@ -27930,7 +27930,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
 
     Scope (\_SB.PCI0.LPCB.EC)
     {
-        Mutex (MCPU, 0x00)
+        Mutex(MCPU, 0)
         Method (_Q1F, 0, NotSerialized)  // _Qxx: EC Query
         {
             If (\_SB.PCI0.LPCB.EC.HKEY.MHKK (0x01, 0x00020000))
@@ -29500,7 +29500,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
 
         Scope (\_SB.PCI0.LPCB.EC.HKEY)
         {
-            Mutex (BFWM, 0x00)
+            Mutex(BFWM, 0)
             Method (MHCF, 1, NotSerialized)
             {
                 Store (\BFWC (Arg0), Local0)

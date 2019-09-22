@@ -20407,7 +20407,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
                     Store (0x07D6, OSYS)
                 }
 
-                If (\_OSI ("Windows 2009"))
+                If(LOr(_OSI("Darwin"),_OSI("Windows 2009")))
                 {
                     Store (0x01, \WIN7)
                     Store (0x07D9, OSYS)

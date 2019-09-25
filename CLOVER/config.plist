@@ -257,6 +257,20 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X09TSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>Fix AsRock Z390 BIOS DSDT Device(RTC) bug. Credit pupin</string>
 					<key>Disabled</key>
 					<false/>

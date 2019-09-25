@@ -10,12 +10,18 @@
 
 DefinitionBlock ("", "SSDT", 2, "hack", "_XOSI", 0)
 {
+    External (RMDT, DeviceObj)
+    External (RMDT.P2, MethodObj)
+    
     // All _OSI calls in DSDT are routed to XOSI...
     // XOSI simulates "Windows 2012" (which is Windows 8)
     // Note: According to ACPI spec, _OSI("Windows") must also return true
     //  Also, it should return true for all previous versions of Windows.
     Method(XOSI, 1)
     {
+        // log input to RMDT
+        \RMDT.P2 ("XOSI called:", Arg0)
+        
         // simulation targets
         // source: (google 'Microsoft Windows _OSI')
         //  http://download.microsoft.com/download/7/E/7/7E7662CF-CBEA-470B-A97E-CE7CE0D98DC2/WinACPI_OSI.docx
@@ -34,7 +40,18 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_XOSI", 0)
             //"Windows 2013",       // Windows 8.1/Windows Server 2012 R2
             //"Windows 2015",       // Windows 10/Windows Server TP
         }, Local0)
-        Return (Ones != Match(Local0, MEQ, Arg0, MTR, 0, 0))
+        
+        // if not looking at Windows, pass to Darwin's _OSI
+        Local1 = (Ones != Match(Local0, MEQ, Arg0, MTR, 0, 0))
+        If (!Local1)
+        {
+            Local1 = \_OSI(Arg0)   
+        }
+        
+        // log output to RMDT
+        \RMDT.P2 ("XOSI result:", Local1)
+        
+        Return (Local1)
     }
 }
 

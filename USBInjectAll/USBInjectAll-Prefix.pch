@@ -1,5 +1,0 @@
-//
-// Prefix header for all source files of the 'USBInjectAll' target in the 'USBInjectAll' project
-//
-
-const char* hack_strstr(const char* string, const char* substring);

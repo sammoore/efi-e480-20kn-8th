@@ -323,6 +323,12 @@
 				<key>Signature</key>
 				<string>MATS</string>
 			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>SSDT</string>
+				<key>TableId</key>
+				<string>xh_cfsd4</string>
+			</dict>
 		</array>
 		<key>FixHeaders</key>
 		<true/>

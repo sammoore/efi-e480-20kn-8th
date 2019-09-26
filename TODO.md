@@ -6,5 +6,6 @@
 - [x] update clover
   * [x] verify hear-say of drivers64UEFI moved to drivers/UEFI
 - [ ] add VirtualSMC configuration
+- [ ] attempt XHC sleep injection
 - [ ] verify igpu-only config
 

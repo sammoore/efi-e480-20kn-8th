@@ -49,7 +49,7 @@
 					<key>Comment</key>
 					<string>change EHC1 to EH01</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					RUhDMQ==
@@ -63,7 +63,7 @@
 					<key>Comment</key>
 					<string>change EHC2 to EH02</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					RUhDMg==
@@ -77,7 +77,7 @@
 					<key>Comment</key>
 					<string>change EUSB to EH01</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					RVVTQg==
@@ -91,7 +91,7 @@
 					<key>Comment</key>
 					<string>change USBE to EH02</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					VVNCRQ==

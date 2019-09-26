@@ -311,6 +311,62 @@
 					FEAGWFBSVwI=
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _S3D to XS3D</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1MzRA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFMzRA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _S4D to XS4D</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1M0RA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFM0RA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _S3W to XS3W</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1MzVw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFMzVw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _S4W to XS4W</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1M0Vw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFM0Vw==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>

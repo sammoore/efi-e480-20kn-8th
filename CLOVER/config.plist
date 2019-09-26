@@ -283,6 +283,20 @@
 					oAqRCv8L//8=
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change XHC _DSM to XDSM</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					FCpfRFNNDEFEQkcNWEhD
+					</data>
+					<key>Replace</key>
+					<data>
+					FCpYRFNNDEFEQkcNWEhD
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DropTables</key>

@@ -1,7 +1,7 @@
 // Automatic injection of XHC properties
 
-//DefinitionBlock("", "SSDT", 2, "hack", "_XHC", 0)
-//{
+DefinitionBlock("", "SSDT", 2, "hack", "_XHC", 0)
+{
     External(_SB.PCI0.XHC, DeviceObj)
 
     // inject properties for XHCI
@@ -19,5 +19,5 @@
             "AAPL,max-port-current-in-sleep", Buffer() { 0x34, 0x08, 0, 0 },
         })
     }
-//}
+}
 //EOF

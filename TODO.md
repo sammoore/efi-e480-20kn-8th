@@ -5,5 +5,6 @@
   * held back VoodooHDA for line-out configuration
 - [x] update clover
   * [x] verify hear-say of drivers64UEFI moved to drivers/UEFI
+- [ ] add VirtualSMC configuration
 - [ ] verify igpu-only config
 

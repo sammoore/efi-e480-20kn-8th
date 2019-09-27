@@ -501,6 +501,8 @@
 	<dict>
 		<key>AppleIntelCPUPM</key>
 		<false/>
+		<key>AppleRTC</key>
+		<false/>
 		<key>KernelPm</key>
 		<true/>
 		<key>KernelToPatch</key>

@@ -557,7 +557,7 @@
 			<true/>
 		</dict>
 		<key>Theme</key>
-		<string>BGM</string>
+		<string>embedded</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -646,8 +646,6 @@
 				</data>
 			</dict>
 		</array>
-		<key>KextsToPatch</key>
-		<array/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>

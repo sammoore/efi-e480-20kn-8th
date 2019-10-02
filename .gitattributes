@@ -1,2 +1,3 @@
 *.aml binary
 *.efi binary
+MacOS/* binary

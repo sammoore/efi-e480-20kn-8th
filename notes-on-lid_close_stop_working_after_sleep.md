@@ -7,7 +7,7 @@
   * SBDN -> RECB (0xA0, 0x80) ??? 
   * RE1B + RECB additions
 - \_PTS diagnostics / monitoring
-- \_WAK If (LGreater (Arg0, 0x04)) addition (not in local)
+- [x] \_WAK If (LGreater (Arg0, 0x04)) addition (not in local)
 - patches of Not (bit) -> eq. bit (optimization?)
 - possible value change: ShiftLeft -> Store 30002-30201-
 

@@ -19801,7 +19801,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
 
     Method (_WAK, 1, Serialized)  // _WAK: Wake
     {
-        If (LOr(LLess(Arg0,1),LGreater(Arg0,5))) { Store(3,Arg0) }
+        If (LGreater(Arg0,4)) { Store(3,Arg0) }
         D8XH (0x01, 0xAB)
         Store (0x01, TBPE)
         ADBG ("_WAK")

@@ -145,7 +145,7 @@
 					<key>Comment</key>
 					<string>change MEI to IMEI</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					TUVJXw==
@@ -173,7 +173,7 @@
 					<key>Comment</key>
 					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					UENJMFZJRF8=
@@ -187,7 +187,7 @@
 					<key>Comment</key>
 					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					VklEXwhfQURSDAAAAgA=
@@ -209,17 +209,7 @@
 		<array>
 			<dict>
 				<key>Signature</key>
-				<string>#MCFG</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
 				<string>DMAR</string>
-			</dict>
-			<dict>
-				<key>Signature</key>
-				<string>SSDT</string>
-				<key>TableId</key>
-				<string>xh_rvp10</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>

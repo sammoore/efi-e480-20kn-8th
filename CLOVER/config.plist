@@ -31,6 +31,20 @@
 			<array>
 				<dict>
 					<key>Comment</key>
+					<string>change HPET _HI to XPET _HI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SFBFVAhfSEk=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBFVAhfSEk=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
 					<key>Disabled</key>
 					<true/>

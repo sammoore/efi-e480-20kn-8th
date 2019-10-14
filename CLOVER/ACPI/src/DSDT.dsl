@@ -18242,13 +18242,24 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
                     0x00000400,         // Address Length
                     _Y32)
             })
-
-            
-
-            
-            Name (_STA, 0x0F)
-            Method (_CRS, 0, NotSerialized)
+            Method (_STA, 0, NotSerialized)  // _STA: Status
             {
+                If (HPTE)
+                {
+                    Return (0x0F)
+                }
+
+                Return (0x00)
+            }
+
+            Method (_CRS, 0, Serialized)  // _CRS: Current Resource Settings
+            {
+                If (HPTE)
+                {
+                    CreateDWordField (BUF0, \_SB.PCI0.LPCB.HPET._Y32._BAS, HPT0)  // _BAS: Base Address
+                    Store (HPTB, HPT0)
+                }
+
                 Return (BUF0)
             }
         }

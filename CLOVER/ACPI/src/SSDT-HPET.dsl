@@ -1,6 +1,15 @@
 DefinitionBlock("", "SSDT", 2, "hack", "_HPET", 0x0)
 {
     External (_SB_.PCI0.LPCB, DeviceObj)
+    External (_SB_.PCI0.LPCB.XPET, DeviceObj)
+    
+    If (CondRefOf (_SB_.PCI0.LPCB.XPET))
+    {
+        Scope (\_SB.PCI0.LPCB.XPET)
+        {
+            Name (_HID, "STPD0000")
+        }
+    }
     
     Scope (\_SB.PCI0.LPCB)
     {

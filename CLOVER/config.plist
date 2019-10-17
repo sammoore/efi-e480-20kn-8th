@@ -17,7 +17,7 @@
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixIPIC</key>
 				<true/>
 				<key>FixRTC</key>
@@ -29,20 +29,6 @@
 			<string>BIOS.aml</string>
 			<key>Patches</key>
 			<array>
-				<dict>
-					<key>Comment</key>
-					<string>change HPET_HI to XPETXHI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SFBFVAhfSEk=
-					</data>
-					<key>Replace</key>
-					<data>
-					WFBFVAhYSEk=
-					</data>
-				</dict>
 				<dict>
 					<key>Comment</key>
 					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>

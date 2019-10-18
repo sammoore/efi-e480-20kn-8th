@@ -40,7 +40,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_BAT", 0)
     External (_SB.PCI0.LPCB.EC.HKEY.MHKQ, MethodObj)
     External (VIGD, FieldUnitObj)
     External (_SB.LID._LID, MethodObj)
-    External (_SB.PCI0.GFX0.CLID, FieldUnitObj)
+    External (_SB.PCI0.IGPU.CLID, FieldUnitObj)
     External (WVIS, IntObj) // indicates Windows 2006 (or higher)
     External (VBTD, MethodObj) // SMI related
     External (VCMS, MethodObj) // SMI related
@@ -547,7 +547,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_BAT", 0)
 
             If (\VIGD)
             {
-                Store (\_SB.LID._LID (), \_SB.PCI0.GFX0.CLID)
+                Store (\_SB.LID._LID (), \_SB.PCI0.IGPU.CLID)
                 If (\WVIS)
                 {
                     \VBTD ()
@@ -555,7 +555,7 @@ DefinitionBlock("", "SSDT", 2, "hack", "_BAT", 0)
             }
             ElseIf (\WVIS)
             {
-                Store (\_SB.LID._LID (), \_SB.PCI0.GFX0.CLID)
+                Store (\_SB.LID._LID (), \_SB.PCI0.IGPU.CLID)
                 \VBTD ()
             }
 
@@ -655,11 +655,11 @@ DefinitionBlock("", "SSDT", 2, "hack", "_BAT", 0)
         \VSLD (\_SB.LID._LID ())
         If (\VIGD)
         {
-            Store (\_SB.LID._LID (), \_SB.PCI0.GFX0.CLID)
+            Store (\_SB.LID._LID (), \_SB.PCI0.IGPU.CLID)
         }
         ElseIf (\WVIS)
         {
-            Store (\_SB.LID._LID (), \_SB.PCI0.GFX0.CLID)
+            Store (\_SB.LID._LID (), \_SB.PCI0.IGPU.CLID)
         }
 
         If (LLess (Arg0, 0x04))

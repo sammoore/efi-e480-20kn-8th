@@ -323,6 +323,34 @@
 					WldBSwk=
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _REG to XREG (for SSDT-DDGPU)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1JFRw==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFJFRw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change PEGP._OFF to XOFF (for SSDT-DDGPU)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					FCtfT0ZGCFwvA19TQl9QQw==
+					</data>
+					<key>Replace</key>
+					<data>
+					FCtYT0ZGCFwvA19TQl9QQw==
+					</data>
+				</dict>
 			</array>
 		</dict>
 		<key>DisabledAML</key>
